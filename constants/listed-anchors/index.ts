@@ -11,10 +11,11 @@ import { parseListedAnchors } from '@/lib/stellar/listed-anchor-schema';
 
 import gratz from './gratz.json';
 import ixinium from './ixinium.json';
+import mauAccounts from './mau-accounts.json';
 import meshMzar from './mesh-mzar.json';
 import moneygramMgusd from './moneygram-mgusd.json';
 import nafuloo from './nafuloo.json';
 
-const RAW: unknown[] = [gratz, ixinium, meshMzar, moneygramMgusd, nafuloo];
+const RAW: unknown[] = [gratz, ixinium, mauAccounts, meshMzar, moneygramMgusd, nafuloo];
 
 export const LISTED_ANCHORS: readonly ListedAnchor[] = parseListedAnchors(RAW);
