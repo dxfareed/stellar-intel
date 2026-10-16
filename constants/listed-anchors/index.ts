@@ -9,10 +9,11 @@
 import type { ListedAnchor } from '@/types';
 import { parseListedAnchors } from '@/lib/stellar/listed-anchor-schema';
 
+import gratz from './gratz.json';
 import meshMzar from './mesh-mzar.json';
 import moneygramMgusd from './moneygram-mgusd.json';
 import nafuloo from './nafuloo.json';
 
-const RAW: unknown[] = [meshMzar, moneygramMgusd, nafuloo];
+const RAW: unknown[] = [gratz, meshMzar, moneygramMgusd, nafuloo];
 
 export const LISTED_ANCHORS: readonly ListedAnchor[] = parseListedAnchors(RAW);
